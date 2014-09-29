@@ -1,0 +1,63 @@
+
+
+
+/* ======================================================================================= */
+/* #Desktop - Extra Large
+================================================== */
+@media only screen and (min-width: 1280px) {
+
+}
+
+
+/* #Desktop
+================================================== */
+
+@media only screen and (min-width: 978px)  and (max-width: 1279px) {
+
+}
+
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 768px, Gutter: 20px, Unit: 44px */
+@media only screen and (min-width: 768px) and (max-width: 977px) {
+
+}
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px Gutter: 10px, Unit: 15px */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* == Retina display ==== */
+/* ===  */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) ,
+only screen and (min-resolution: 144dpi){
+
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 978px) and (max-width: 1279px),
+only screen and (min-resolution: 144dpi)  and (min-width: 978px) and (max-width: 1279px)
+{
+
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 977px) and (min-width: 768px),
+only screen and (min-resolution: 144dpi) and (max-width: 977px) and (min-width: 768px)
+{
+
+}
