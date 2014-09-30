@@ -6,346 +6,12 @@
 	Licensed under GPL and MIT.
 */
 
+
+
+
 /* #Desktop - Extra Large
 ================================================== */
 @media only screen and (min-width: 1280px) {
-
-    /*
-      Forces backgrounds to span full width,
-      even if there is horizontal scrolling.
-      Increase this if your layout is wider.
-
-      Note: IE6 works fine without this fix.
-    */
-
-    body {
-        min-width: 1272px;
-        overflow-x:hidden;
-    }
-
-    /* Containers
-    ----------------------------------------------------------------------------------------------------*/
-    .container_12 {
-        margin-left: auto;
-        margin-right: auto;
-        width: 1272px;
-    }
-
-    .content-wrapper > .shadow-box,
-    .content-wrapper > .shadow-box >.site-container,
-    footer#footer .site-container{width:1302px;}
-
-    /* Grid >> Global
-    ----------------------------------------------------------------------------------------------------*/
-
-
-    .grid_1,
-    .grid_2,
-    .grid_3,
-    .grid_4,
-    .grid_5,
-    .grid_6,
-    .grid_7,
-    .grid_8,
-    .grid_9,
-    .grid_10,
-    .grid_11,
-    .grid_12 {
-        display:inline;
-        float: left;
-        position: relative;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-
-
-    .push_1, .pull_1,
-    .push_2, .pull_2,
-    .push_3, .pull_3,
-    .push_4, .pull_4,
-    .push_5, .pull_5,
-    .push_6, .pull_6,
-    .push_7, .pull_7,
-    .push_8, .pull_8,
-    .push_9, .pull_9,
-    .push_10, .pull_10,
-    .push_11, .pull_11,
-    .push_12, .pull_12 {
-        position:relative;
-    }
-
-
-    /* Grid >> Children (Alpha ~ First, Omega ~ Last)
-    ----------------------------------------------------------------------------------------------------*/
-
-    .alpha {
-        margin-left: 0;
-    }
-
-    .omega {
-        margin-right: 0;
-    }
-
-    /* Grid >> 12 Columns
-    ----------------------------------------------------------------------------------------------------*/
-
-
-    .container_12 .grid_1 {
-        width:86px;
-    }
-
-    .container_12 .grid_2 {
-        width:192px;
-    }
-
-    .container_12 .grid_3 {
-        width:298px;
-    }
-
-    .container_12 .grid_4 {
-        width:404px;
-    }
-
-    .container_12 .grid_5 {
-        width:510px;
-    }
-
-    .container_12 .grid_6 {
-        width:616px;
-    }
-
-    .container_12 .grid_7 {
-        width:722px;
-    }
-
-    .container_12 .grid_8 {
-        width:828px;
-    }
-
-    .container_12 .grid_9 {
-        width:934px;
-    }
-
-    .container_12 .grid_10 {
-        width:1040px;
-    }
-
-    .container_12 .grid_11 {
-        width:1146px;
-    }
-
-    .container_12 .grid_12 {
-        width:1252px;
-    }
-
-
-
-
-    /* Prefix Extra Space >> 12 Columns
-    ----------------------------------------------------------------------------------------------------*/
-
-
-    .container_12 .prefix_1 {
-        padding-left:106px;
-    }
-
-    .container_12 .prefix_2 {
-        padding-left:212px;
-    }
-
-    .container_12 .prefix_3 {
-        padding-left:318px;
-    }
-
-    .container_12 .prefix_4 {
-        padding-left:424px;
-    }
-
-    .container_12 .prefix_5 {
-        padding-left:530px;
-    }
-
-    .container_12 .prefix_6 {
-        padding-left:636px;
-    }
-
-    .container_12 .prefix_7 {
-        padding-left:742px;
-    }
-
-    .container_12 .prefix_8 {
-        padding-left:848px;
-    }
-
-    .container_12 .prefix_9 {
-        padding-left:954px;
-    }
-
-    .container_12 .prefix_10 {
-        padding-left:1060px;
-    }
-
-    .container_12 .prefix_11 {
-        padding-left:1166px;
-    }
-
-
-
-    /* Suffix Extra Space >> 12 Columns
-    ----------------------------------------------------------------------------------------------------*/
-
-
-    .container_12 .suffix_1 {
-        padding-right:106px;
-    }
-
-    .container_12 .suffix_2 {
-        padding-right:212px;
-    }
-
-    .container_12 .suffix_3 {
-        padding-right:318px;
-    }
-
-    .container_12 .suffix_4 {
-        padding-right:424px;
-    }
-
-    .container_12 .suffix_5 {
-        padding-right:530px;
-    }
-
-    .container_12 .suffix_6 {
-        padding-right:636px;
-    }
-
-    .container_12 .suffix_7 {
-        padding-right:742px;
-    }
-
-    .container_12 .suffix_8 {
-        padding-right:848px;
-    }
-
-    .container_12 .suffix_9 {
-        padding-right:954px;
-    }
-
-    .container_12 .suffix_10 {
-        padding-right:1060px;
-    }
-
-    .container_12 .suffix_11 {
-        padding-right:1166px;
-    }
-
-
-
-    /* Push Space >> 12 Columns
-    ----------------------------------------------------------------------------------------------------*/
-
-
-    .container_12 .push_1 {
-        left:106px;
-    }
-
-    .container_12 .push_2 {
-        left:212px;
-    }
-
-    .container_12 .push_3 {
-        left:318px;
-    }
-
-    .container_12 .push_4 {
-        left:424px;
-    }
-
-    .container_12 .push_5 {
-        left:530px;
-    }
-
-    .container_12 .push_6 {
-        left:636px;
-    }
-
-    .container_12 .push_7 {
-        left:742px;
-    }
-
-    .container_12 .push_8 {
-        left:848px;
-    }
-
-    .container_12 .push_9 {
-        left:954px;
-    }
-
-    .container_12 .push_10 {
-        left:1060px;
-    }
-
-    .container_12 .push_11 {
-        left:1166px;
-    }
-
-
-
-    /* Pull Space >> 12 Columns
-    ----------------------------------------------------------------------------------------------------*/
-
-
-    .container_12 .pull_1 {
-        left:-106px;
-    }
-
-    .container_12 .pull_2 {
-        left:-212px;
-    }
-
-    .container_12 .pull_3 {
-        left:-318px;
-    }
-
-    .container_12 .pull_4 {
-        left:-424px;
-    }
-
-    .container_12 .pull_5 {
-        left:-530px;
-    }
-
-    .container_12 .pull_6 {
-        left:-636px;
-    }
-
-    .container_12 .pull_7 {
-        left:-742px;
-    }
-
-    .container_12 .pull_8 {
-        left:-848px;
-    }
-
-    .container_12 .pull_9 {
-        left:-954px;
-    }
-
-    .container_12 .pull_10 {
-        left:-1060px;
-    }
-
-    .container_12 .pull_11 {
-        left:-1166px;
-    }
-}
-
-
-/* #Desktop
-================================================== */
-
-@media only screen and (min-width: 978px)  and (max-width: 1279px) {
     /*
       Forces backgrounds to span full width,
       even if there is horizontal scrolling.
@@ -421,14 +87,12 @@
 
     /* Grid >> 12 Columns
     ----------------------------------------------------------------------------------------------------*/
-
-
     .container_12 .grid_1 {
         width:54px;
     }
 
     .container_12 .grid_2 {
-        width:138px;
+        width:150px;
     }
 
     .container_12 .grid_3 {
@@ -684,11 +348,9 @@
     }
 }
 
-/* #Tablet (Portrait)
+/* #Desktop
 ================================================== */
-
-/* Note: Design for a width of 768px, Gutter: 20px, Unit: 44px */
-@media only screen and (min-width: 768px) and (max-width: 977px) {
+@media only screen and (min-width: 978px)  and (max-width: 1279px) {
     /*
       Forces backgrounds to span full width,
       even if there is horizontal scrolling.
@@ -741,24 +403,6 @@
         margin-right: 10px;
     }
 
-
-
-    .push_1, .pull_1,
-    .push_2, .pull_2,
-    .push_3, .pull_3,
-    .push_4, .pull_4,
-    .push_5, .pull_5,
-    .push_6, .pull_6,
-    .push_7, .pull_7,
-    .push_8, .pull_8,
-    .push_9, .pull_9,
-    .push_10, .pull_10,
-    .push_11, .pull_11,
-    .push_12, .pull_12 {
-        position:relative;
-    }
-
-
     /* Grid >> Children (Alpha ~ First, Omega ~ Last)
     ----------------------------------------------------------------------------------------------------*/
 
@@ -772,12 +416,6 @@
 
     /* Grid >> 12 Columns
     ----------------------------------------------------------------------------------------------------*/
-
-
-    .container_12 .grid_1 {
-        width:44px;
-    }
-
     .container_12 .grid_2 {
         width:108px;
     }
@@ -1024,12 +662,11 @@
     }
 }
 
-
-/*  #Mobile (Portrait)
+/* #Tablet (Portrait)
 ================================================== */
 
-/* Note: Design for a width of 320px Gutter: 10px, Unit: 15px */
-@media only screen and (max-width: 767px) {
+/* Note: Design for a width of 768px, Gutter: 20px, Unit: 44px */
+@media only screen and (min-width: 768px) and (max-width: 977px) {
 
     .content-wrapper > .shadow-box,
     .content-wrapper > .shadow-box >.site-container,
@@ -1057,15 +694,14 @@
     .grid_12 {
         margin-left: 0;
         margin-right: 0;
+        display:inline;
+        float: left;
+        position: relative;
     }
 
     .grid_12{
         margin-left: 10px;
         margin-right: 10px;
-    }
-    header#header .grid_12{
-        margin-left:0;
-        margin-right:0;
     }
 
     .alpha,
@@ -1079,24 +715,65 @@
         text-align: left;
     }
 
-    /* Adaptive */
-    .block-related .no-slider li.item:nth-of-type(2n+2){
-        margin-right:0;
+
+    .container_12 .grid_1 {
+        width:54px;
     }
-    .block-related .no-slider li.item:nth-of-type(2n+1){
-        clear:left;
+
+    .container_12 .grid_2 {
+        width:150px;
+    }
+
+    .container_12 .grid_3 {
+        width:222px;
+    }
+
+    .container_12 .grid_4 {
+        width:306px;
+    }
+
+    .container_12 .grid_5 {
+        width:390px;
+    }
+
+    .container_12 .grid_6 {
+        width:474px;
+    }
+
+    .container_12 .grid_7 {
+        width:558px;
+    }
+
+    .container_12 .grid_8 {
+        width:642px;
+    }
+
+    .container_12 .grid_9 {
+        width:726px;
+    }
+
+    .container_12 .grid_10 {
+        width:810px;
+    }
+
+    .container_12 .grid_11 {
+        width:894px;
+    }
+
+    .container_12 .grid_12 {
+        width:978px;
     }
 
 
     /* Global Styles ========================================================================= */
-    body{font-size:0.6em;}
+    body{font-size:1em;}
 }
 
-/* #Mobile (Landscape)
+/*  #Mobile (Portrait)
 ================================================== */
 
-/* Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+/* Note: Design for a width of 320px Gutter: 10px, Unit: 15px */
+@media only screen and (max-width: 767px) {
 
     body {
         min-width: 420px;
@@ -1125,6 +802,9 @@
     .grid_12 {
         margin-left: 0;
         margin-right: 0;
+        display:inline;
+        float: left;
+        position: relative;
     }
 
     .grid_12 {
@@ -1142,9 +822,62 @@
     .align_right {
         text-align: left;
     }
+
+    .container_12 .grid_1 {
+        width:54px;
+    }
+
+    .container_12 .grid_2 {
+        width:90px;
+    }
+
+    .container_12 .grid_3 {
+        width:222px;
+    }
+
+    .container_12 .grid_4 {
+        width:200px;
+    }
+
+    .container_12 .grid_5 {
+        width:280px;
+    }
+
+    .container_12 .grid_6 {
+        width:474px;
+    }
+
+    .container_12 .grid_7 {
+        width:558px;
+    }
+
+    .container_12 .grid_8 {
+        width:642px;
+    }
+
+    .container_12 .grid_9 {
+        width:426px;
+    }
+
+    .container_12 .grid_10 {
+        width:810px;
+    }
+
+    .container_12 .grid_11 {
+        width:894px;
+    }
+
+    .container_12 .grid_12 {
+        width:978px;
+    }
 }
+/* #Mobile (Landscape)
+================================================== */
 
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px){
 
+}
 /* `Clear Floated Elements
 ----------------------------------------------------------------------------------------------------*/
 
@@ -1180,6 +913,6 @@
   Move to separate stylesheet if invalid CSS is a problem.
 */
 
-.clearfix {
-    zoom: 1;
-}
+/*.clearfix {*/
+    /*zoom: 1;*/
+/*}*/

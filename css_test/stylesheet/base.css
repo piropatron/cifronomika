@@ -1,24 +1,24 @@
 /* Reset ================================================================================= */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: top;
-}
+/*html, body, div, span, applet, object, iframe,*/
+/*h1, h2, h3, h4, h5, h6, p, blockquote, pre,*/
+/*a, abbr, acronym, address, big, cite, code,*/
+/*del, dfn, em, img, ins, kbd, q, s, samp,*/
+/*small, strike, strong, sub, sup, tt, var,*/
+/*b, u, i, center,*/
+/*dl, dt, dd, ol, ul, li,*/
+/*fieldset, form, label, legend,*/
+/*table, caption, tbody, tfoot, thead, tr, th, td,*/
+/*article, aside, canvas, details, embed,*/
+/*figure, figcaption, footer, header, hgroup,*/
+/*menu, nav, output, ruby, section, summary,*/
+/*time, mark, audio, video {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*border: 0;*/
+    /*font-size: 100%;*/
+    /*font: inherit;*/
+    /*vertical-align: top;*/
+/*}*/
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -69,7 +69,7 @@ ul,ol         { list-style:none; }
 /* Global Styles ========================================================================= */
 body {
     font:0.9em/1.5em "Open Sans", sans-serif;
-    color:#777;
+    color: #000;
 }
 
 a {
@@ -87,25 +87,25 @@ a:hover {
 :focus        { outline:0; }
 
 /* Headings */
-h1            { font-size:1.5em;    line-height:normal; font-weight:normal; }
-h2            { font-size:1.33em;   line-height:normal; font-weight:normal; margin-bottom:0.57em;}
+h1            { font-size:2em;      line-height:normal; font-weight:normal; }
+h2            { font-size:1.33em;   line-height:normal; font-weight:bold;   margin-bottom:0.57em;}
 h3            { font-size:1.09em;   line-height:normal; font-weight:bold;   margin-bottom:0.69em;}
 h4            { font-size:1em;      line-height:normal; font-weight:bold;   margin-bottom:0.75em;}
 h5            { font-size:0.91em;   line-height:normal; font-weight:bold;   margin-bottom:0.83em;}
 h6            { font-size:0.91em;   line-height:normal; font-weight:normal; margin-bottom:0.83em;}
 
-h1,h2,h3,h4,h5,h6{font-family: Arial, sans-serif;}
+/*h1,h2,h3,h4,h5,h6{font-family: Arial, sans-serif;}*/
 
 .col-main p{margin-bottom:0.2em;}
 
 .content-wrapper{overflow:hidden;}
 
 /* Form Elements */
-input,select,textarea,button { font:11px/18px Arial, Helvetica, sans-serif; vertical-align:middle; color:#999699; }
+input,select,textarea,button { font:20px/30px sans-serif; vertical-align:middle; color:#999699;background-color: #fff; border: none; box-shadow: 0 0 3px 0 #808080 inset;}
 input.input-text,select{height:18px;}
 input.input-text,select,textarea { background:#fff; border:1px solid #d4d4d4; }
 input.input-text,textarea { padding:2px; }
-select { padding:1px 1px 1px 3px; height:20px;}
+select {font:12px/18px sans-serif; padding:1px 1px 1px 3px; height:25px;}
 select option { padding-right:10px; }
 select.multiselect{height:auto;}
 select.multiselect option { border-bottom:1px solid #ddd; padding:2px 5px; }

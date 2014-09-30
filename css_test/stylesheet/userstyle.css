@@ -1,6 +1,110 @@
+.content-wrapper  > .site-container{
+    width: 1302px;
 
+    background-color: #fff;
+    margin: 0 auto;
+}
 
+.form-wrapper .wrapper
+{
+    position: relative;
+}
+.form-wrapper .wrapper:before,
+.form-wrapper .wrapper:after
+{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 35%;
+    left: -7px;
+    width: 50%;
+    top: 10%;
+    max-width:300px;
+    background-image: linear-gradient(to top, #efd5d4 , #fbd7d7,transparent );
+    -webkit-transform: rotate(-3deg);
+       -moz-transform: rotate(-3deg);
+         -o-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+}
+.form-wrapper .wrapper:after
+{
+    -webkit-transform: rotate(3deg);
+       -moz-transform: rotate(3deg);
+         -o-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+            transform: rotate(3deg);
+    right: -7px;
+    left: auto;
+}
 
+.form-wrapper .wrapper{
+    background: #fefcea;
+    background: linear-gradient(to top, #ffe8e8, #ffe8e8,#ffe8e8,#fbd7d7 , #efd5d4);
+}
+
+.form-wrapper .submit-wrapper{
+    /*box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);*/
+    background: #a7b2ce; /* Для старых браузров */
+    background: linear-gradient(to top, #a7b2ce, #d8cbd8);
+}
+
+.main-container div.grid_9 h1{
+    margin: 20px 10px;
+    font-weight: bold;
+}
+
+.form .wrapper div.input-wrapper {
+    margin: 3px;
+    display: inline;
+    float: left;
+    position: relative;
+    vertical-align: middle;
+}
+
+.form div.input-wrapper:first-child{
+    margin-top: 20px;
+}
+
+.form div.input-wrapper:last-child{
+    margin-bottom: 20px;
+}
+
+.form div.input-wrapper div.grid_4,
+input,textarea,button{
+    padding: 0 8px;
+}
+label[class*=grid] {
+    font-size: 0.9em;
+    padding: 8px;
+}
+
+div.submit-wrapper  button{
+    background: linear-gradient(to top, #ebecf3, #dddde3, #ebecf3) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 18px;
+    text-shadow: 1px 1px white;
+}
+ input[name="i_not_sick"]
+{
+    float: left;
+}
+
+label[for="i_not_sick"]
+{
+    font-size: .9em;
+}
+
+h2 { margin: 0 8px 0.57em; }
+
+.margin-left {
+    margin-left: 195px;
+}
 /* ======================================================================================= */
 /* #Desktop - Extra Large
 ================================================== */
@@ -13,7 +117,12 @@
 ================================================== */
 
 @media only screen and (min-width: 978px)  and (max-width: 1279px) {
-
+    .content-wrapper > .site-container{
+        width: 978px
+    }
+    label[class*=grid]{
+        padding: 2px;
+    }
 }
 
 /* #Tablet (Portrait)
@@ -21,7 +130,13 @@
 
 /* Note: Design for a width of 768px, Gutter: 20px, Unit: 44px */
 @media only screen and (min-width: 768px) and (max-width: 977px) {
-
+    .content-wrapper > .site-container{
+        width: 768px
+    }
+    label[class*=grid] {
+        font-size: 0.9em;
+        padding: 4px;
+    }
 }
 
 
@@ -30,7 +145,16 @@
 
 /* Note: Design for a width of 320px Gutter: 10px, Unit: 15px */
 @media only screen and (max-width: 767px) {
-
+    .content-wrapper > .site-container{
+        width: 100%
+    }
+    label[class*=grid] {
+        font-size: 0.9em;
+        padding: 0px;
+    }
+    .margin-left {
+        margin-left: 90px;
+    }
 }
 
 /* #Mobile (Landscape)
@@ -43,21 +167,19 @@
 
 /* == Retina display ==== */
 /* ===  */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) ,
-only screen and (min-resolution: 144dpi){
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5)
+{
 
 
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 978px) and (max-width: 1279px),
-only screen and (min-resolution: 144dpi)  and (min-width: 978px) and (max-width: 1279px)
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 978px) and (max-width: 1279px)
 {
 
 }
 
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 977px) and (min-width: 768px),
-only screen and (min-resolution: 144dpi) and (max-width: 977px) and (min-width: 768px)
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 977px) and (min-width: 768px)
 {
 
 }
