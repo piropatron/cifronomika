@@ -350,7 +350,8 @@
 
 /* #Desktop
 ================================================== */
-@media only screen and (min-width: 978px)  and (max-width: 1279px) {
+@media only screen and (min-width: 978px)  and (max-width: 1279px)
+{
     /*
       Forces backgrounds to span full width,
       even if there is horizontal scrolling.
@@ -666,11 +667,7 @@
 ================================================== */
 
 /* Note: Design for a width of 768px, Gutter: 20px, Unit: 44px */
-@media only screen and (min-width: 768px) and (max-width: 977px) {
-
-    .content-wrapper > .shadow-box,
-    .content-wrapper > .shadow-box >.site-container,
-    footer#footer .site-container{width:auto!important;}
+@media only screen and (min-width: 768px) and (max-width: 977px){
 
     /* Containers
     ----------------------------------------------------------------------------------------------------*/
@@ -692,8 +689,8 @@
     .grid_10,
     .grid_11,
     .grid_12 {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 15px;
+        margin-right: 15px;
         display:inline;
         float: left;
         position: relative;
@@ -725,7 +722,7 @@
     }
 
     .container_12 .grid_3 {
-        width:222px;
+        width:150px;
     }
 
     .container_12 .grid_4 {
@@ -733,7 +730,7 @@
     }
 
     .container_12 .grid_5 {
-        width:390px;
+        width:320px;
     }
 
     .container_12 .grid_6 {
@@ -749,7 +746,7 @@
     }
 
     .container_12 .grid_9 {
-        width:726px;
+        width:526px;
     }
 
     .container_12 .grid_10 {
@@ -773,7 +770,7 @@
 ================================================== */
 
 /* Note: Design for a width of 320px Gutter: 10px, Unit: 15px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) and (min-width: 479px){
 
     body {
         min-width: 420px;
@@ -805,6 +802,7 @@
         display:inline;
         float: left;
         position: relative;
+        width: 100%;
     }
 
     .grid_12 {
@@ -823,52 +821,16 @@
         text-align: left;
     }
 
-    .container_12 .grid_1 {
-        width:54px;
-    }
-
     .container_12 .grid_2 {
         width:90px;
     }
 
-    .container_12 .grid_3 {
-        width:222px;
-    }
-
     .container_12 .grid_4 {
-        width:200px;
+        width:300px;
     }
 
     .container_12 .grid_5 {
         width:280px;
-    }
-
-    .container_12 .grid_6 {
-        width:474px;
-    }
-
-    .container_12 .grid_7 {
-        width:558px;
-    }
-
-    .container_12 .grid_8 {
-        width:642px;
-    }
-
-    .container_12 .grid_9 {
-        width:426px;
-    }
-
-    .container_12 .grid_10 {
-        width:810px;
-    }
-
-    .container_12 .grid_11 {
-        width:894px;
-    }
-
-    .container_12 .grid_12 {
-        width:978px;
     }
 }
 /* #Mobile (Landscape)
@@ -878,6 +840,44 @@
 @media only screen and (min-width: 480px) and (max-width: 767px){
 
 }
+@media only screen and (max-width: 479px){
+
+    .container_12{
+        width: 100%;
+    }
+
+    .grid_1,
+    .grid_2,
+    .grid_3,
+    .grid_4,
+    .grid_5,
+    .grid_6,
+    .grid_7,
+    .grid_8,
+    .grid_9,
+    .grid_10,
+    .grid_11,
+    .grid_12 {
+        margin-left: 0;
+        margin-right: 0;
+        display:inline;
+        float: left;
+        position: relative;
+        width: 100%;
+    }
+
+    .container_12 .grid_2{
+        width: 90px ;
+    }
+
+    .container_12 .grid_4{
+        width: 190px ;
+    }
+    .container_12 .grid_5 {
+        width: 200px;
+    }
+}
+
 /* `Clear Floated Elements
 ----------------------------------------------------------------------------------------------------*/
 
@@ -913,6 +913,6 @@
   Move to separate stylesheet if invalid CSS is a problem.
 */
 
-/*.clearfix {*/
-    /*zoom: 1;*/
-/*}*/
+.clearfix {
+    zoom: 1;
+}

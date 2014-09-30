@@ -18,9 +18,9 @@
     bottom: 35%;
     left: -7px;
     width: 50%;
-    top: 10%;
+    top: 0;
     max-width:300px;
-    background-image: linear-gradient(to top, #efd5d4 , #fbd7d7,transparent );
+    background-image: linear-gradient(to top, #ffe8e8, #ffe8e8, #ffe8e8, rgba( 255,255,255,0) );
     -webkit-transform: rotate(-3deg);
        -moz-transform: rotate(-3deg);
          -o-transform: rotate(-3deg);
@@ -44,8 +44,7 @@
 }
 
 .form-wrapper .submit-wrapper{
-    /*box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);*/
-    background: #a7b2ce; /* Для старых браузров */
+    background: #a7b2ce;
     background: linear-gradient(to top, #a7b2ce, #d8cbd8);
 }
 
@@ -90,7 +89,12 @@ div.submit-wrapper  button{
     padding: 18px;
     text-shadow: 1px 1px white;
 }
- input[name="i_not_sick"]
+
+.main-container > div.grid_3{
+    float: right;
+}
+
+input[name="i_not_sick"]
 {
     float: left;
 }
@@ -101,15 +105,20 @@ label[for="i_not_sick"]
 }
 
 h2 { margin: 0 8px 0.57em; }
-
-.margin-left {
-    margin-left: 195px;
+.main-container > div.grid_3{
+    margin-top: 4em;
 }
+
 /* ======================================================================================= */
 /* #Desktop - Extra Large
 ================================================== */
 @media only screen and (min-width: 1280px) {
-
+    .margin-left {
+        margin-left: 195px;
+    }
+    label.grid_4.no-padding.margin-left{
+        margin: 0;
+    }
 }
 
 
@@ -122,6 +131,10 @@ h2 { margin: 0 8px 0.57em; }
     }
     label[class*=grid]{
         padding: 2px;
+    }
+
+    .margin-left {
+        margin-left: 135px;
     }
 }
 
@@ -137,6 +150,12 @@ h2 { margin: 0 8px 0.57em; }
         font-size: 0.9em;
         padding: 4px;
     }
+    .margin-left {
+        margin-left: 190px;
+    }
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.2em; }
+    h3 { margin: 0; }
 }
 
 
@@ -155,6 +174,9 @@ h2 { margin: 0 8px 0.57em; }
     .margin-left {
         margin-left: 90px;
     }
+    .main-container > div.grid_3{
+        margin-top: 0;
+    }
 }
 
 /* #Mobile (Landscape)
@@ -162,7 +184,18 @@ h2 { margin: 0 8px 0.57em; }
 
 /* Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .content-wrapper > .site-container{
+        width: 100%
+    }
 
+}
+
+@media only screen and (max-width: 479px){
+    div.submit-wrapper.grid_9.alpha.omega > div:nth-child(2) > .margin-left {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* == Retina display ==== */
@@ -170,16 +203,19 @@ h2 { margin: 0 8px 0.57em; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5)
 {
 
-
 }
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 978px) and (max-width: 1279px)
+/* iPad */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 978px) and (max-width: 1023px)
 {
+    /*.container_12,*/
+    /*.content-wrapper > .site-container{*/
+        /*width: 100%*/
+    /*}*/
 
 }
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 977px) and (min-width: 768px)
 {
-
+    h1 { color: red; }
 }
