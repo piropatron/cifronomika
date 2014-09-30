@@ -90,6 +90,10 @@ div.submit-wrapper  button{
     text-shadow: 1px 1px white;
 }
 
+div.submit-wrapper  button:hover{
+    background: linear-gradient(to top, #dddde3, #ebecf3, #dddde3) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
 .main-container > div.grid_3{
     float: right;
 }
