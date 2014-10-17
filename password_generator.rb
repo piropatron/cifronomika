@@ -15,7 +15,7 @@ class PasswordGenerator
                  fa  fo  fi  fu  fy  fe
                  ha  ho  hi  hu  hy  he).freeze
 
-  def generate( length = 8 )
+  def generate(length = 8)
     number_part = generate_number_part(length)
     "#{generate_string_part(length, number_part)}#{number_part}"
   end
@@ -29,7 +29,7 @@ class PasswordGenerator
 
   def generate_string_part(length, number_part)
     length = (length - number_part.length) / 2
-    (1..length).collect{ SYLLABLES[rand(SYLLABLES.length - 1)] }.join('').capitalize
+    (1..length).collect{SYLLABLES[rand(SYLLABLES.length - 1)]}.join('').capitalize
   end
 end
 
