@@ -1,34 +1,41 @@
 class PasswordGenerator
 
-    def initialize
-        @syllables =  %w(ba  bo  bi  bu  by  be
-                         va  vo  vi  vu  vy  ve
-                         ga  go  gi  gu  gy  ge
-                         da  do  di  du  dy  de
-                         za  zo  zi  zu  zy  ze
-                         ka  ko  ki  ku  ky  ke
-                         la  lo  li  lu  ly  le
-                         ma  mo  mi  mu  my  me
-                         na  no  ni  nu  ny  ne
-                         pa  po  pi  pu  py  pe
-                         ra  ro  ri  ru  ry  re
-                         sa  so  si  su  sy  se
-                         ta  to  ti  tu  ty  te
-                         fa  fo  fi  fu  fy  fe
-                         ha  ho  hi  hu  hy  he)
-    end
+  Syllables = %w(ba  bo  bi  bu  by  be
+                 va  vo  vi  vu  vy  ve
+                 ga  go  gi  gu  gy  ge
+                 da  do  di  du  dy  de
+                 za  zo  zi  zu  zy  ze
+                 ka  ko  ki  ku  ky  ke
+                 la  lo  li  lu  ly  le
+                 ma  mo  mi  mu  my  me
+                 na  no  ni  nu  ny  ne
+                 pa  po  pi  pu  py  pe
+                 ra  ro  ri  ru  ry  re
+                 sa  so  si  su  sy  se
+                 ta  to  ti  tu  ty  te
+                 fa  fo  fi  fu  fy  fe
+                 ha  ho  hi  hu  hy  he)
 
-    def create_human_readable_password( password_length = 8 )
-        password = []
-        number_part_password = password_length.even? ? rand(10..99) : rand(1..9)
-        length = ( password_length - number_part_password.to_s.length ) / 2
-        syllables_length = @syllables.length
-        length.times do
-            password << @syllables[rand(syllables_length)]
-        end
-        "#{password.join('').capitalize}#{number_part_password}"
-    end
+  def initialize
+    @length = 8
+  end
+
+  def create(length)
+    @length = length
+    @int_part = int_part
+    "#{string_part.join('').capitalize}#{@int_part}"
+  end
+
+  private
+  def int_part
+    rand( @length.even? ? 10..99 : 1..9 )
+  end
+
+  def string_part
+    length = (@length - @int_part.to_s.length) / 2
+    (1..length).collect{ Syllables[rand(Syllables.length - 1)] }
+  end
 
 end
 
-puts(PasswordGenerator.new.create_human_readable_password 8)
+puts PasswordGenerator.new.create 8
