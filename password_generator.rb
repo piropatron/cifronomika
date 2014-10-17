@@ -19,14 +19,14 @@ class PasswordGenerator
     end
 
     def create_human_readable_password( password_length = 8 )
-        result = ''
+        password = []
         number_part_password = password_length.even? ? rand(10..99) : rand(1..9)
         length = ( password_length - number_part_password.to_s.length ) / 2
+        syllables_length = @syllables.length
         length.times do
-            random_syllables = @syllables[rand(@syllables.length)]
-            result = "#{result}#{random_syllables}"
+            password << @syllables[rand(syllables_length)]
         end
-        "#{result.capitalize}#{number_part_password}"
+        "#{password.join('').capitalize}#{number_part_password}"
     end
 
 end
