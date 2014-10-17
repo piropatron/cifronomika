@@ -17,7 +17,6 @@
 /config/environments
 /config/initializers
 /config/locales
-/config/application.rb
 /config/boot.rb
 /config/database.yml
 /config/environment.rb
