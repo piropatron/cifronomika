@@ -23,7 +23,7 @@ class PasswordGenerator
   def create(length)
     @length = length
     @int_part = int_part
-    "#{string_part.join('').capitalize}#{@int_part}"
+    "#{string_part}#{@int_part}"
   end
 
   private
@@ -33,7 +33,7 @@ class PasswordGenerator
 
   def string_part
     length = (@length - @int_part.to_s.length) / 2
-    (1..length).collect{ Syllables[rand(Syllables.length - 1)] }
+    (1..length).collect{ Syllables[rand(Syllables.length - 1)] }.join('').capitalize
   end
 
 end
