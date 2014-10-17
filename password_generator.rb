@@ -24,12 +24,12 @@ class PasswordGenerator
   private
 
   def generate_number_part(length)
-     rand(length.even? ? 10..99 : 1..9).to_s
+    rand(length.even? ? 10..99 : 1..9).to_s
   end
 
   def generate_string_part(length, number_part)
     length = (length - number_part.length) / 2
-    (1..length).collect{SYLLABLES[rand(SYLLABLES.length - 1)]}.join('').capitalize
+    (1..length).collect { SYLLABLES[rand(SYLLABLES.length - 1)] }.join.capitalize
   end
 end
 
