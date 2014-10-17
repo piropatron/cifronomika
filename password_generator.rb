@@ -20,8 +20,8 @@ class PasswordGenerator
     @length = 8
   end
 
-  def create(length)
-    @length = length
+  def create( length = nil )
+    @length = length unless length.nil?
     @int_part = int_part
     "#{string_part}#{@int_part}"
   end
