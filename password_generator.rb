@@ -28,8 +28,8 @@ class PasswordGenerator
   end
 
   def generate_string_part(length, number_part)
-    length = (length - number_part.length) / 2
-    (1..length).collect{SYLLABLES[rand(SYLLABLES.length - 1)]}.join('').capitalize
+    length = (length-number_part.length)/2
+    (1..length).collect{SYLLABLES[rand(SYLLABLES.length-1)]}.join('').capitalize
   end
 end
 
