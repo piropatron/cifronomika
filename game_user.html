@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+        var game_user = {
+            count_step: 0,
+            user_number: 0,
+            numbers: [],
+            init: function () {
+                var i = 1;
+                while(i <= 10){
+                    this.numbers.push(i);
+                    i++;
+                }
+                return this;
+            },
+            get_random: function (min, max) {
+                return Math.round(Math.random() * (max - min) + min);
+            },
+            set_number: function () {
+                this.user_number = parseInt(prompt('Загадайте число'));
+                return this;
+            },
+            set_count_step: function () {
+                this.count_step = this.get_random(1, 10);
+                alert('Комньютер говорит что угадает за '+ this.count_step + ' шагов');
+                return this;
+            },
+            try_number: function() {
+                this.count_step--;
+                if(this.count_step <= 0){
+                    alert('Вы выиграли !!!');
+                    return;
+                }
+                var index = this.get_random(0, this.numbers.length - 1),
+                    computer_number = this.numbers[ index ];
+                if(computer_number === this.user_number){
+                    alert('Компьютер выиграл !!!');
+                    return;
+                }
+                var result = prompt('Компьютер говорит ' + computer_number);
+                if(result == '>'){
+                    this.numbers = this.numbers.filter( function (v) {
+                        return v > computer_number;
+                    } );
+                }else{
+                    this.numbers = this.numbers.filter( function (v) {
+                        return v < computer_number;
+                    } );
+                }
+                this.try_number();
+            }
+        };
+        game_user.init().set_number().set_count_step().try_number();
+    </script>
+</head>
+<body>
+</body>
+</html>

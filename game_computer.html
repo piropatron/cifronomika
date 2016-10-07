@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+        var game_computer = {
+            count_step: 0,
+            computer_number: Math.round(Math.random() * 10),
+            set_count_step: function () {
+                this.count_step = prompt('Введите количество попыток: ') ;
+            },
+            try_number: function() {
+                this.count_step--;
+                if(this.count_step <= 0){
+                    alert('Выиграл компьютер !!!');
+                    return;
+                }
+                var number = prompt('Ваше число: ');
+                if(this.computer_number === parseInt(number)){
+                    alert('Вы вышграли !!!');
+                    return;
+                }else{
+                    alert(  number > this.computer_number ? 'Меньше' : 'Больше');
+                }
+                this.try_number();
+            }
+        };
+
+        game_computer.set_count_step();
+        game_computer.try_number();
+    </script>
+</head>
+<body>
+</body>
+</html>
